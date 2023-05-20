@@ -1,0 +1,194 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* headings */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.big-heading{
+    font-size:3.5rem;
+    line-height: 1.5;
+}
+
+.pricing-h2-section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+p{
+    color: gray
+}
+.container-fluid{
+    padding: 7% 15%;
+    
+}
+/* sections */
+.colored-section{
+    background-color: #ff4c68;
+    color: white;
+}
+.white-section{
+    background-color: white;
+}
+
+/* tittle section */
+
+
+/* navigation bar */
+.navbar{
+    padding-bottom: 4.5rem;
+}
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.navbar-item{
+    padding: 0 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+#title .container-fluid{
+    text-align: left;
+    padding: 3% 15% 7%;
+}
+.apple_logo{
+    width:5%;
+}
+.playstore_logo{
+    width:5%;
+}
+/* tittle image  */
+.title-image{
+    position: absolute;
+    width: 60%;
+    transform: rotate(25deg);
+}
+/* download-button */
+
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+/* by making tittle image positioned absolute it size got very bigger so to handle that i put that into
+an another div and that worked */
+.img-iphone{
+    position: relative;
+    bottom: 2rem;
+    left: 3.5rem;
+
+}
+
+
+
+
+/*  features  section */
+#features{
+    position: relative;
+    /* z-index: 1;  */
+    /* z - index does matter in this case because features in after title section in 
+    the html flow so it will be on the top by default  */
+}
+
+.ft-row{
+    background-color: white;
+}
+.ft{
+    margin:0 auto;
+}
+.ft-icon:hover{
+    color: #ff4c68!important;
+}
+/* The !important rule in CSS is used to add more importance to a property/value than normal. 
+In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element! */
+.ft-name{
+    font-size: 1.5rem;
+}
+.ft-p{
+    padding : 0 4rem; 
+}
+
+
+
+
+
+/* Testimonials  section  */
+
+.testimonial-h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.testimonial-image{
+    width:10%;
+    border-radius: 100%;
+    margin: 1.5rem;
+}
+
+
+
+
+/* press section  */
+.press-logo{
+    width :15%;
+    margin :1.25rem 1.25rem 3.125rem;
+}
+
+
+
+
+
+/* pricing section */
+#pricing {
+    padding:100px;
+}
+.pricing-coloum{
+    padding:3% 2%;
+}
+.pricing-h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+}
+.pricing-h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+
+/* cta section  */
+
+.cta-h3{
+    font-size: 3.5rem;
+}
+.cta-button{
+    margin: 3rem 1rem 0;
+}
+.cta-icon{
+    margin: 0 4px;
+}
+
+.icon-p{
+    padding : 0 4rem; 
+}
+
+/* footer section  */
+.footer-links{
+    margin: 0 4px 1rem;
+}
+
+
+/* media query */
+@media (max-width:1028px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0deg);
+    }
+}
